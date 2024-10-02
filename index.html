@@ -1,4 +1,5 @@
 <p>this is new repo</p>
+<p>this is new feature</p>
 
 <!---PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git commit -m"add initial files"
 [master (root-commit) 28ba502] add initial files
@@ -186,6 +187,41 @@ next git remote add origin<--link->(http link from github)
 git remove -v//to verify remote
 git branch//default master
 git branch -M main(to rename branch so that changes to main)
-git add . //git commit -m"...""//git push origin main common
+git add . //git commit -m"...""//git push origin main <common-->
+
+<!--about branches
+ 1 file changed, 9 insertions(+), 1 deletion(
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch (used too get which branch you are)
+* main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git checkout -b feature1(used to create branch feature1)
+Switched to a new branch 'feature1'
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch
+* feature1
+  main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git checkout main(used to navigate(move)to main branch)
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch
+  feature1
+* main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git checkout -b feature2
+Switched to a new branch 'feature2'
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch
+  feature1
+* feature2
+  main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch -d feature2(you cant delete the branch you present so navigate before delete)
+error: cannot delete branch 'feature2' used by worktree at 'C:/Users/vinis/OneDrive/Documents/gitdemo/GITPRACTICE'
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git delete -d feature2
+git: 'delete' is not a git command. See 'git --help'.
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch -d feature2(used to delete)
+Deleted branch feature2 (was 1e0b86b).
+S C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git branch
+  feature1
+* main
+-->
 
 
