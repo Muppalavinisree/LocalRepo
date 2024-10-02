@@ -1,1 +1,180 @@
 <p>this is new repo</p>
+
+<!---PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git commit -m"add initial files"
+[master (root-commit) 28ba502] add initial files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git remote origin https://github.com/Muppalavinisree/LocalRepo.git
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]        
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git remote add https://github.com/Muppalavinisree/LocalRepo.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch      
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git remote add origin https://github.com/Muppalavinisree/LocalRepo.git
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git remote -v
+origin  https://github.com/Muppalavinisree/LocalRepo.git (fetch)
+origin  https://github.com/Muppalavinisree/LocalRepo.git (push)
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git branch
+* master
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git branch -M main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git btanch
+git: 'btanch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git branch
+* main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git push -u origin main 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads      
+Compressing objects: 100% (2/2), done.       
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Muppalavinisree/LocalRepo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'. 
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git add .
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git commit -m"added files"
+[main ddab916] added files
+ 2 files changed, 5 insertions(+)
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean        
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads      
+Compressing objects: 100% (2/2), done.       
+Writing objects: 100% (4/4), 359 bytes | 359.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Muppalavinisree/LocalRepo.git
+   28ba502..ddab916  main -> main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean        
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git ..
+git: '..' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        gc
+        mv
+        p4
+        rm
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> cd ..
+PS C:\Users\vinis\OneDrive\Documents\gitdemo>
+ cd GITPRACTICE
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git add .
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git commit -m"added content"
+[main 20d9fd6] added content
+ 1 file changed, 1 insertion(+)
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads      
+Compressing objects: 100% (2/2), done.       
+Writing objects: 100% (3/3), 310 bytes | 155.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Muppalavinisree/GITPRACTICE.git
+   eac16b0..20d9fd6  main -> main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\GITPRACTICE> cd ..
+PS C:\Users\vinis\OneDrive\Documents\gitdemo>
+ cd LocalRepo
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git add .
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git commit -m"added readme"
+[main de7d96d] added readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads      
+Compressing objects: 100% (2/2), done.       
+Writing objects: 100% (3/3), 323 bytes | 53.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Muppalavinisree/LocalRepo.git
+   ddab916..de7d96d  main -> main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git add .
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git commit -m"addedreadme"
+[main c88638a] addedreadme
+ 1 file changed, 1 insertion(+)
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads      
+Compressing objects: 100% (2/2), done.       
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Muppalavinisree/LocalRepo.git
+   de7d96d..c88638a  main -> main
+PS C:\Users\vinis\OneDrive\Documents\gitdemo\LocalRepo>
+
+cd ..//use for remove directory
+cd <directory name> use to create directory
+    <mkdir> used to make directory
+git clone <copy code http from github and paste so that we get into that directory>
+git status for verify status
+git add index.html to add file
+git add . to add all
+git commit -m"text"
+git push origin main //once you make git push -u origin main then nxt time just run git push
+
+before this you need to make git config --global user.name="respositoryname(like GITPRACTICE,LOCALREPO)"//to add globally
+--global user.email="vinisreemuppala248@gmail.com"//to add globally
+
